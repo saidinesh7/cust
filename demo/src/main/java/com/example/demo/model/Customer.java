@@ -1,5 +1,5 @@
 package com.example.demo.model;
-
+import jakarta.persistence.Id;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
@@ -7,6 +7,7 @@ import jakarta.persistence.Table;
 @Table
 public class Customer {
 
+    @Id
     private int id;
     private String name;
     private String gender;
